@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeamCalc - Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="beamTitle">Input for Beam</h1>
+        <form id="beamForm">
+            <input type="number" id="force" placeholder="Force (N)" required><br>
+            <input type="number" id="length" placeholder="Length (m)" required><br>
+            <input type="number" id="width" placeholder="Width (m)" required><br>
+            <input type="number" id="height" placeholder="Height (m)" required><br>
+            <input type="number" id="loadPos" placeholder="Load Position (m)"><br>
+            <select id="material">
+                <option value="steel">Steel (250 MPa)</option>
+                <option value="aluminum">Aluminum (70 MPa)</option>
+                <option value="wood">Wood (10 MPa)</option>
+            </select><br>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
